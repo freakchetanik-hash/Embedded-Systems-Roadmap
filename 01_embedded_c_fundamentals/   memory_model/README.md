@@ -7,3 +7,7 @@ Key concepts:
 - Stack allocation and scope
 - Heap allocation using malloc/free
 - Global memory lifetime
+
+## Experiments
+- Stack vs Heap memory behavior
+- Global vs Static variable lifetime and scope
