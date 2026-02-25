@@ -1,14 +1,16 @@
 {
     "configurations": [
         {
-            "name": "Win32",
+            "name": "ARM-STM32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "C:/Users/Chetan/Downloads/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE"
+                "_UNICODE",
+                "STM32F446xx" 
             ],
             "compilerPath": "C:/Users/Chetan/Downloads/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe",
             "cStandard": "c11",
