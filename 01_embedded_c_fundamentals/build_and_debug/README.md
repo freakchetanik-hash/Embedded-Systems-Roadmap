@@ -1,42 +1,33 @@
-# 05 - Build and Debug
+# 05 - Build and Debug (Embedded C Fundamentals)
 
-## 📌 Overview
-This folder demonstrates the basics of building and running a C program using **GCC** and **GNU Make**.  
-It focuses on understanding how source code is compiled into an executable.
+## 🎯 Objective
 
----
+Understand how C programs are built, linked, and debugged without relying on an IDE.
 
-## 🛠 Tools Used
-- GCC (MinGW)
-- GNU Make (`mingw32-make`)
-- Windows PowerShell
+This section focuses on:
 
----
-
-## 🚀 Build
-
-Navigate to the `makefile_basics` folder and run:
-
-mingw32-make
+- GCC compilation process
+- Makefile basics
+- Object files and linking
+- ELF file structure
+- Memory sections (.text, .data, .bss)
+- Basic debugging using GDB
 
 ---
 
-## ▶️ Run
+## 🧱 Concepts Covered
 
-.\main.exe
+### 1️⃣ GCC Build Stages
 
-> Note: In PowerShell, `.\` is required to run executables from the current directory.
+Compilation process:
 
----
+1. Preprocessing  → `.i`
+2. Compilation    → `.s`
+3. Assembly       → `.o`
+4. Linking        → `.elf`
 
-## 🧹 Clean
+Example:
 
-mingw32-make clean
-
----
-
-## 🎯 Key Learning
-- Basic Makefile structure  
-- Build automation  
-- PATH configuration in Windows  
-- Running executables correctly in PowerShell  
+```bash
+gcc -c file.c -o file.o
+gcc file.o -o main  
