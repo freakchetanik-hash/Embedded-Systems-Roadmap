@@ -16,3 +16,9 @@ main.elf: main.o startup_stm32f446re.o
 
 clean:
 	rm -rf *.o *.elf
+# Flash the main.elf to the STM32 board
+flash:
+	openocd -f interface/stlink.cfg -f target/stm32f4x.cfg -c "program main.elf verify reset exit"
+
+# Clean and then Build
+rebuild: clean all
