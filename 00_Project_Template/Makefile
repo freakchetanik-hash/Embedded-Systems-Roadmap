@@ -13,6 +13,7 @@ startup_stm32f446re.o: startup_stm32f446re.c
 
 main.elf: main.o startup_stm32f446re.o
 	$(CC) $(LDFLAGS) -o $@ $^
+	arm-none-eabi-size $@
 
 clean:
 	rm -rf *.o *.elf
