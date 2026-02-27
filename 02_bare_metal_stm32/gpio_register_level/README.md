@@ -15,6 +15,7 @@ STM32F446RE (Nucleo)
 1. Enable GPIOA clock
 2. Configure PA5 as output
 3. Toggle using ODR
+4. Working LED control using BSRR
 
 ## Result
 LED blinks continuously.
