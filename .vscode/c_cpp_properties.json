@@ -3,17 +3,13 @@
         {
             "name": "ARM-STM32",
             "includePath": [
-                "${workspaceFolder}/**",
-                "C:/Users/Chetan/Downloads/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include"
+                "${workspaceFolder}/**"
             ],
             "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "STM32F446xx" 
+                "STM32F446xx"
             ],
-            "compilerPath": "C:/Users/Chetan/Downloads/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe",
+            "compilerPath": "C:/ArmToolchain/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe",
             "cStandard": "c11",
-            "cppStandard": "gnu++14",
             "intelliSenseMode": "windows-gcc-arm"
         }
     ],
