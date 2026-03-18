@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug STM32F446RE",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "stlink",
+            "device": "STM32F446RE",
+            "executable": "${workspaceFolder}/firmware/main.elf",
+            "armToolchainPath": "C:/ArmToolchain/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi/bin",
+            "runToEntryPoint": "main"
+        }
+    ]
+}
