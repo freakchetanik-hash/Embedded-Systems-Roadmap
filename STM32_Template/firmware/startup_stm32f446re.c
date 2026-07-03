@@ -12,8 +12,8 @@ extern uint32_t _estack;
 int main(void);
 void Reset_Handler(void);
 void Default_Handler(void);
-void EXTI15_10_IRQHandler(void);
-
+void EXTI15_10_IRQHandler(void)
+    __attribute__((weak, alias("Default_Handler")));
 /* Weak aliases for interrupts */
 void NMI_Handler(void)          __attribute__((weak, alias("Default_Handler")));
 void HardFault_Handler(void)    __attribute__((weak, alias("Default_Handler")));
