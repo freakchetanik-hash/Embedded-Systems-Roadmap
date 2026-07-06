@@ -19,6 +19,7 @@ LDFLAGS = -nostdlib -T stm32f446re.ld
 
 SRCS = \
 main.c \
+gpio.c \
 startup_stm32f446re.c
 
 OBJS = $(SRCS:.c=.o)
