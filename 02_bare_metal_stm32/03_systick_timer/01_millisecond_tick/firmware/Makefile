@@ -10,7 +10,7 @@ TARGET = main
 
 MCU = cortex-m4
 
-CFLAGS = -mcpu=$(MCU) -mthumb -std=gnu11 -O0 -Wall -c
+CFLAGS = -mcpu=$(MCU) -mthumb -std=gnu11 -O0 -g3 -Wall -c
 LDFLAGS = -nostdlib -T stm32f446re.ld
 
 ###############################################################################
@@ -19,6 +19,7 @@ LDFLAGS = -nostdlib -T stm32f446re.ld
 
 SRCS = \
 main.c \
+systick.c \
 startup_stm32f446re.c
 
 OBJS = $(SRCS:.c=.o)
