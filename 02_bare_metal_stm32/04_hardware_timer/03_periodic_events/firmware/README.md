@@ -30,4 +30,4 @@ timer_restart()
 
 ## Demo
 
-Blink LED every 500 ms using the periodic timer driver.
+Blink LED every 900 ms using the periodic timer driver.
